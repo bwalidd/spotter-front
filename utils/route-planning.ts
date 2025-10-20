@@ -120,7 +120,7 @@ export async function planRoute(
     // Add fuel stop (every 400-500 miles)
     if (dayDistance > 400) {
       stops.push({
-        type: "fuel",
+        type: "fuel" as "fuel",
         location: `Fuel Stop ${i + 1}`,
         distance: Math.round(dayDistance * 0.6),
         time: 0.5,
@@ -130,7 +130,7 @@ export async function planRoute(
 
     // Add mandatory rest break
     stops.push({
-      type: "rest",
+      type: "rest" as "rest",
       location: `Rest Area ${i + 1}`,
       distance: dayDistance,
       time: requiredBreak,
