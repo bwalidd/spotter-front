@@ -889,7 +889,7 @@ export default function DrawableLogSheet({ log, tripData, onUpdate }: DrawableLo
   }
 
   const handleRemoveRemark = (index: number) => {
-    const updatedRemarks = remarks.filter((_, i) => i !== index)
+    const updatedRemarks = remarks.filter((_: any, i: number) => i !== index)
     setRemarks(updatedRemarks)
     onUpdate?.({ ...log, activities, notes, remarks: updatedRemarks })
   }
