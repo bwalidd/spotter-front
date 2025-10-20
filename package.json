@@ -1,0 +1,45 @@
+{
+  "name": "eld-log-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Professional ELD Log Generator with drawable canvas for FMCSA Hours of Service compliance",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "html2canvas": "^1.4.1",
+    "jiti": "latest",
+    "jspdf": "^2.5.1",
+    "less": "latest",
+    "lightningcss": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "15.2.4",
+    "react": "^19",
+    "react-dom": "^19",
+    "sass": "latest",
+    "sass-embedded": "latest",
+    "stylus": "latest",
+    "sugarss": "latest",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "terser": "latest",
+    "tsx": "latest",
+    "vite": "latest",
+    "yaml": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  }
+}
