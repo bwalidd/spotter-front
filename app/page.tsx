@@ -5,10 +5,11 @@ import TripForm from "@/components/trip-form"
 import LeafletMapDisplay from "@/components/leaflet-map-display"
 import LogSheetGenerator from "@/components/log-sheet-generator"
 import { planRoute } from "@/utils/route-planning"
+import { RouteData } from "@/types/route"
 
 export default function Home() {
-  const [tripData, setTripData] = useState(null)
-  const [routeData, setRouteData] = useState(null)
+  const [tripData, setTripData] = useState<any>(null)
+  const [routeData, setRouteData] = useState<RouteData | null>(null)
   const [showResults, setShowResults] = useState(false)
 
   const handleTripSubmit = async (formData: any) => {
