@@ -98,6 +98,7 @@ export function generateDefaultLog(day, date, estimatedDrivingHours) {
   const drivingHoursToAdd = Math.min(estimatedDrivingHours, HOS_RULES.MAX_DRIVING_PER_DAY)
   for (let i = 0; i < drivingHoursToAdd && i < 24; i++) {
     activities[i] = ACTIVITY_TYPES.DRIVING
+    //ddd
   }
 
   // Add sleeper hours
